@@ -40,6 +40,7 @@
 				<aside id="sidebar">
 					<div class="collection">
 						<a ng-repeat="m in modes"
+						   ng-href="#{{m}}"
 						   ng-click="changeMode($event)"
 						   ng-class=" { 'active' : mode === m } "
 						   class="collection-item">
