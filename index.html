@@ -31,7 +31,7 @@
 	</header>
 	<main>
 		<div id="content-wrapper">
-			<div class="inner clearfix">
+			<div class="inner clearfix" ng-cloak>
 
 				<div ng-include="'app/features/about/about.html'"></div>
 				<div ng-include="'app/features/started/started.html'"></div>
@@ -40,6 +40,7 @@
 				<aside id="sidebar">
 					<div class="collection">
 						<a ng-repeat="m in modes"
+						   ng-cloak
 						   ng-href="#{{m}}"
 						   ng-click="changeMode($event)"
 						   ng-class=" { 'active' : mode === m } "
