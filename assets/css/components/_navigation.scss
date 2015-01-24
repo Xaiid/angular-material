@@ -1,4 +1,5 @@
 @import 'mixins';
+@import '../../../bower_components/compass-mixins/lib/compass';
 
 nav {
   display: -webkit-flex;
@@ -56,6 +57,7 @@ nav {
   }
 
   li {
+    @include hand-cursor();
     -ms-flex-direction: row;
     -webkit-flex-direction: row;
     flex-direction: row;
