@@ -14,4 +14,4 @@ Sooo I decided to create my own and in the process maybe it'll help others.
 
 # Demo
 
-TODO
+http://minhongrails.github.io/angular-materialize
