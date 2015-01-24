@@ -28,3 +28,17 @@
   cursor: pointer;
   cursor: hand;
 }
+
+@mixin unselectable() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@mixin antialiasing( $type:antialiased ) {
+  -webkit-font-smoothing: $type;
+  font-smoothing: $type;
+  font-smooth: always;
+}

@@ -9,7 +9,7 @@ html, body {
 body {
   font-family: 'Muli', 'Open Sans', Arial, sans-serif;
   height: 100%;
-  margin: 0 2em;
+//  margin: 0 2em;
   box-sizing: border-box;
   @include flexbox();
   -webkit-flex-direction: column;
@@ -29,35 +29,20 @@ body {
   @include flex(1);
 }
 #main > * {
-  border: 1px solid #ccc;
-  padding: 0.25em;
-  border-radius: 10px;
+//  border: 1px solid #ccc;
+//  padding: 0.25em;
+//  border-radius: 10px;
 }
 #main > article {
   @include flex(1 0 0px);
+  @include flexbox();
 
   -webkit-order: 2;
   -ms-order: 2;
   -moz-order: 2;
   -o-order: 2;
   order: 2;
-  margin: 0 10px;
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  display: -moz-flex;
-  -moz-justify-content: center;
-  -moz-align-items: center;
-  display: -ms-flex;
-  -ms-justify-content: center;
-  -ms-align-items: center;
-  display: -o-flex;
-  -o-justify-content: center;
-  -o-align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+//  margin: 0 10px;
 }
 
 #main > section {
@@ -280,3 +265,4 @@ footer {
     flex: 1 0 auto;
   }
 }
+
