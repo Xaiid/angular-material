@@ -1,3 +1,5 @@
+@import 'mixins';
+
 nav {
   display: -webkit-flex;
   display: -moz-flex;
@@ -35,12 +37,23 @@ nav {
   -o-flex-direction: column;
   flex-direction: column;
   width: 200px;
-  height: 20vh;
-  -webkit-order: 1;
-  -ms-order: 1;
-  -moz-order: 1;
-  -o-order: 1;
-  order: 1;
+  height: 100%;
+  @include order(0);
+
+  .collection {
+    width: 100%;
+  }
+
+  .collection-item {
+//    padding: 0px;
+  }
+
+  // TODO: make the nav bar show by pressing a hamburger
+  @include bp(xs) {
+    width: 100%;
+    height: 17vh;
+//    display: none;
+  }
 
   li {
     -ms-flex-direction: row;
