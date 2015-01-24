@@ -1,0 +1,124 @@
+nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  -o-flex: none;
+  flex: none;
+}
+
+.sidenav {
+  background-color: white;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  width: 200px;
+  height: 20vh;
+  -webkit-order: 1;
+  -ms-order: 1;
+  -moz-order: 1;
+  -o-order: 1;
+  order: 1;
+
+  li {
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    padding: 0.25em;
+    margin: 0.25em;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-transition: -webkit-flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
+    -moz-transition: -moz-flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
+    -ms-transition: -ms-flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
+    -o-transition: -o-flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
+    transition: flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
+    text-align: center;
+    border-bottom: 1px solid #eee;
+
+    a, a:hover {
+      color: #000;
+    }
+
+  }
+
+}
+
+nav > a {
+  padding: 15px;
+  color: white;
+  display: block;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  margin: auto 10px;
+  text-decoration: none;
+  -webkit-transition: background-size 100ms ease-in-out,
+  font-size 100ms ease-in-out 500ms;
+  -moz-transition: background-size 100ms ease-in-out,
+  font-size 100ms ease-in-out 500ms;
+  -ms-transition: background-size 100ms ease-in-out,
+  font-size 100ms ease-in-out 500ms;
+  -o-transition: background-size 100ms ease-in-out,
+  font-size 100ms ease-in-out 500ms;
+  transition: background-size 100ms ease-in-out,
+  font-size 100ms ease-in-out 500ms;
+  background-size: 100% 0;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 0; // apparently there's a spec change. Hack for now.
+}
+nav > a:first-child {
+  margin-left: 0;
+}
+nav > a:last-child {
+  margin-right: 0;
+}
+nav > a:hover {
+  background-size: 100% 100%;
+}

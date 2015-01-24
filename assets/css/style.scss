@@ -888,7 +888,12 @@ footer a:hover {
 
 
 @import 'layout';
+@import 'components/navigation';
 
+
+body {
+  padding: 10px 0px;
+}
 
 
 
