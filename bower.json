@@ -1,0 +1,25 @@
+{
+  "name": "angular-materialize-demo",
+  "version": "0.0.1",
+  "homepage": "https://github.com/minhongrails/angular-materialize",
+  "authors": [
+    "minhongrails@gmail.com"
+  ],
+  "description": "demo",
+  "main": "index.html",
+  "keywords": [
+    "demo"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-materialize": "~0.0.1"
+  }
+}
