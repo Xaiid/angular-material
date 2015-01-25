@@ -1,0 +1,10 @@
+@import '../../../bower_components/materialize/sass/materialize';
+
+.svg-grey {
+//  @extend .grey !optional;
+  fill: map-get($grey, lighten-1);
+}
+
+.svg-lighten-2 {
+//  @extend .lighten-2 !optional;
+}

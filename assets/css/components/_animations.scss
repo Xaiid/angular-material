@@ -20,10 +20,44 @@ $easeInOutExpo : cubic-bezier(1.000, 0.000, 0.000, 1.000);
   }
   100% {
     opacity: 0;
+    visibility: none;
+  }
+}
+
+@include keyframes(fade-in-animation) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(grow-100x-animation) {
+  0% {
+    transform: scale(1, 1);
+    visibility: visible;
+  }
+  90% {
+    transform: scale(50, 50);
+    visibility: hidden;
+  }
+  100% {
+    transform: scale(1, 1);
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
 .fade-out {
-  @include animation('fade-out-animation 1s ' + $easeInExpo + ' 1s 1 normal forwards');
+  @include animation('fade-out-animation 1s ' + $easeInExpo + ' 2s 1 normal forwards');
 }
 
+.grow-100x {
+  @include animation('grow-100x-animation 300ms ' + $easeInExpo + ' 3s 1 normal forwards');
+}
+
+.fade-in {
+  opacity: 0;
+  @include animation('fade-in-animation 1s ' + $easeOutExpo + ' 3300ms 1 normal forwards');
+}

@@ -6,6 +6,7 @@
 @import 'components/typography';
 @import 'components/layout';
 @import 'components/animations';
+@import 'components/shapes';
 @import '../../app/features/navigation/navigation';
 @import '../../app/features/articles/article';
 
@@ -55,4 +56,13 @@ body {
 
 .opacity-8 {
   opacity: 0.8;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+// hacky way to hide scrollbars when we do an svg explode animation...
+.hide-scrollbars {
+  overflow: hidden;
 }
