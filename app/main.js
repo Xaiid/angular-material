@@ -10,7 +10,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 			.state('Home', {
 				url: '/',
 				templateUrl: 'app/home.html',
-				controller: function($scope) {
+				controller: function ($scope) {
 					$scope.title = 'Home';
 				}
 			})
@@ -18,7 +18,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 			.state('Quickstart', {
 				url: '/quickstart',
 				templateUrl: 'app/features/articles/quickstart/quickstart.html',
-				controller: function($scope) {
+				controller: function ($scope) {
 					$scope.title = 'Quickstart';
 				}
 			})
@@ -26,7 +26,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 			.state('About', {
 				url: '/about',
 				templateUrl: 'app/features/articles/about/about.html',
-				controller: function($scope) {
+				controller: function ($scope) {
 					$scope.title = 'About';
 				}
 			});
