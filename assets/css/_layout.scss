@@ -35,7 +35,7 @@ body {
 }
 #main > article {
   @include flex(1 0 0px);
-  @include flexbox();
+//  @include flexbox();
 
   -webkit-order: 2;
   -ms-order: 2;

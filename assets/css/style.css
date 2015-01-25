@@ -8463,11 +8463,6 @@ body {
   -moz-flex: 1 0 0px;
   -ms-flex: 1 0 0px;
   flex: 1 0 0px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-order: 2;
   -ms-order: 2;
   -moz-order: 2;
@@ -8847,9 +8842,8 @@ nav a {
   font-smooth: always; }
 
 .article-header {
-  height: 15vh; }
-
-#index-banner {
-  background-color: #ee6e73; }
+  height: 15vh;
+  line-height: 15vh;
+  margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
