@@ -393,11 +393,11 @@ footer {
 
 .fade-in {
   opacity: 0;
-  -webkit-animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 3300ms 1 normal forwards;
-  -moz-animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 3300ms 1 normal forwards;
-  -ms-animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 3300ms 1 normal forwards;
-  -o-animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 3300ms 1 normal forwards;
-  animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 3300ms 1 normal forwards; }
+  -webkit-animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
+  -moz-animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
+  -ms-animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
+  -o-animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
+  animation: fade-in-animation 1s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards; }
 
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
