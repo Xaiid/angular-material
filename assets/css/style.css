@@ -267,6 +267,50 @@ footer {
  * A partial implementation of the Ruby display functions from Compass:
  * https://github.com/Compass/compass/blob/stable/core/lib/compass/core/sass_extensions/functions/display.rb
  */
+@-webkit-keyframes fade-out-animation {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes fade-out-animation {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fade-out-animation {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-ms-keyframes fade-out-animation {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-o-keyframes fade-out-animation {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.fade-out {
+  -webkit-animation: fade-out-animation 2s cubic-bezier(.55,0,.1,1) 0s 1 normal forwards;
+  -moz-animation: fade-out-animation 2s cubic-bezier(.55,0,.1,1) 0s 1 normal forwards;
+  -ms-animation: fade-out-animation 2s cubic-bezier(.55,0,.1,1) 0s 1 normal forwards;
+  -o-animation: fade-out-animation 2s cubic-bezier(.55,0,.1,1) 0s 1 normal forwards;
+  animation: fade-out-animation 2s cubic-bezier(.55,0,.1,1) 0s 1 normal forwards; }
+
+/*
+ * A partial implementation of the Ruby list functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/lists.rb
+ */
+/*
+ * A partial implementation of the Ruby constants functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/constants.rb
+ */
+/*
+ * A partial implementation of the Ruby display functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/core/lib/compass/core/sass_extensions/functions/display.rb
+ */
 .sidenav {
   display: -webkit-flex;
   display: -moz-flex;
@@ -445,5 +489,19 @@ body {
   -moz-transition: compact(compact(all 500ms ease-in-out, false, false, false, false, false, false, false, false, false) false false false);
   -o-transition: compact(compact(all 500ms ease-in-out, false, false, false, false, false, false, false, false, false) false false false);
   transition: compact(all 500ms ease-in-out, false, false, false, false, false, false, false, false, false); }
+
+.absolute-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center; }
+  @media (max-width: 600px) {
+    .absolute-center {
+      width: 100%; } }
+
+.opacity-8 {
+  opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */

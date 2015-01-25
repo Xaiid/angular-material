@@ -5,6 +5,7 @@
 @import 'components/variables';
 @import 'components/typography';
 @import 'components/layout';
+@import 'components/animations';
 @import '../../app/features/navigation/navigation';
 @import '../../app/features/articles/article';
 
@@ -38,4 +39,20 @@ body {
   @include transition(all 500ms ease-in-out);
 }
 
+.absolute-center {
+//  width: 50%;
+//  height: 50%;
+//  overflow: auto;
+//  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
 
+  @include bp(xs) {
+    width: 100%;
+  }
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}

@@ -1,0 +1,16 @@
+@import '../../../bower_components/compass-mixins/lib/compass';
+@import 'mixins';
+
+@include keyframes(fade-out-animation) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  @include animation('fade-out-animation 2s cubic-bezier(.55,0,.1,1) 0s 1 normal forwards');
+}
+
