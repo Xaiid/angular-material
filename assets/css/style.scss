@@ -5,8 +5,8 @@
 @import 'components/variables';
 @import 'components/typography';
 @import 'components/layout';
-@import 'components/navigation';
-@import 'components/article';
+@import '../../app/features/navigation/navigation';
+@import '../../app/features/articles/article';
 
 
 body {
