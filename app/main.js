@@ -1,16 +1,10 @@
 var app = angular.module('materializeDemo', []);
 
-app.controller('mainController',
+app.controller('mainCtrl',
 		function ($scope) {
 
-			$scope.mode = 'About';
-			$scope.modes = [ 'About', 'Getting Started', 'Components', 'CSS' ];
-
-
-			// TODO: pull this into directive
-			$scope.changeMode = function($event) {
-				var mode = $event.target.outerText;
-				$scope.mode = mode;
-			}
+			$scope.articles = [ 'About', 'Quickstart'];
+			$scope.current = {};
+			$scope.current.article = $scope.articles[0];
 
 		});

@@ -1,0 +1,14 @@
+<nav class="sidenav" ng-controller="sidebarCtrl">
+	<ul class="collection">
+		<li class="collection-item banner">
+			<a href="">
+				<h5 class="architect-text">Angular Materialize</h5>
+			</a>
+		</li>
+		<li class="collection-item"
+		    ng-click="click(article)"
+		    ng-repeat="article in articles">
+			<a href="#{{article}}">{{article}}</a>
+		</li>
+	</ul>
+</nav>
