@@ -33,7 +33,7 @@
   @include order(0);
 
   .banner {
-    height: 20vh;
+    height: 25vh;
     cursor: default;
   }
   .banner:hover {
@@ -150,14 +150,6 @@ nav {
   @include bp(xs) {
     width: 100%;
   }
-
-  a {
-    @include antialiasing();
-  }
 }
 
-.article-header {
-  height: 15vh;
-  line-height: 15vh;
-  margin-bottom: 30px;
-}
+

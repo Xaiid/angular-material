@@ -1,0 +1,12 @@
+$article-height: 15vh;
+.article-header {
+  height: $article-height;
+  line-height: 15vh;
+  margin-bottom: 30px;
+  box-shadow: none;
+}
+
+.page-title {
+  line-height: $article-height;
+  font-size: 48px;
+}

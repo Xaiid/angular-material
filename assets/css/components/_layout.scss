@@ -1,29 +1,7 @@
-@import '../../bower_components/materialize/sass/materialize';
-@import 'components/flexbox';
-@import 'components/color';
+@import 'flexbox';
+@import 'color';
 
-html, body {
-  height: 100%;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Muli', 'Open Sans', Arial, sans-serif;
-  height: 100%;
-//  margin: 0 2em;
-  box-sizing: border-box;
-  @include flexbox();
-  -webkit-flex-direction: column;
-  -webkit-justify-content: center;
-  -moz-flex-direction: column;
-  -moz-justify-content: center;
-  -ms-flex-direction: column;
-  -ms-justify-content: center;
-  -o-flex-direction: column;
-  -o-justify-content: center;
-  flex-direction: column;
-  justify-content: center;
-  @include transition(all 500ms ease-in-out);
-}
+
 #main {
   @include flexbox();
   @include flex(1);
@@ -202,7 +180,6 @@ footer {
 }
 @media all and (max-width: 600px) {
   body {
-    margin: 0 10px;
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
