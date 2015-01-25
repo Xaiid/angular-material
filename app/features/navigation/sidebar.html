@@ -6,9 +6,8 @@
 			</a>
 		</li>
 		<li class="collection-item"
-		    ng-click="click(article)"
 		    ng-repeat="article in articles">
-			<a href="#{{article}}">{{article}}</a>
+			<a ui-sref="{{article}}">{{article}}</a>
 		</li>
 	</ul>
 </nav>

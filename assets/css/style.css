@@ -406,13 +406,13 @@ nav > a:hover {
     width: 100%; } }
 
 .article-header {
-  height: 25vh;
+  height: 26vh;
   line-height: 30vh;
   margin-bottom: 30px;
   box-shadow: none; }
 
 .page-title {
-  line-height: 25vh;
+  line-height: 26vh;
   font-size: 48px; }
 
 html, body {

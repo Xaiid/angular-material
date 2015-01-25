@@ -14,23 +14,27 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<title>Angular-materialize</title>
+		<title>Angular Materialize</title>
+		<base href="/">
 	</head>
 
 	<body>
 		<div id="main">
 			<div ng-include="'app/features/navigation/sidebar.html'"></div>
 
-			<article
-					ng-if="current.article === 'About'"
-					ng-include="'app/features/articles/about/about.html'"></article>
-			<article
-					ng-if="current.article === 'Quickstart'"
-					ng-include="'app/features/articles/quickstart/quickstart.html'"></article>
+			<article ui-view></article>
+
+			<!--<article-->
+					<!--ng-if="current.article === 'About'"-->
+					<!--ng-include="'app/features/articles/about/about.html'"></article>-->
+			<!--<article-->
+					<!--ng-if="current.article === 'Quickstart'"-->
+					<!--ng-include="'app/features/articles/quickstart/quickstart.html'"></article>-->
 		</div>
 
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 		<script type="text/javascript" src="app/main.js"></script>
 		<script type="text/javascript" src="app/features/navigation/sidebar.js"></script>
 
