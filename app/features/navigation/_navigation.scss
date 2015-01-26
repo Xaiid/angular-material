@@ -1,12 +1,9 @@
 @import '../../../assets/css/components/mixins';
 @import '../../../assets/css/components/variables';
+@import '../../../assets/css/components/flexbox';
 
 .sidenav {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
+  @include flexbox();
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
@@ -51,7 +48,7 @@
   }
 
   .collection-item {
-//    padding: 0px;
+    padding: 0px;
   }
 
   // TODO: make the nav bar show by pressing a hamburger
@@ -64,32 +61,6 @@
   li {
     @include hand-cursor();
     @include unselectable();
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    -o-flex: 1;
-    flex: 1;
-    padding: 0.25em;
-    margin: 0.25em;
-    width: 100%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
     -webkit-transition: -webkit-flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
     -moz-transition: -moz-flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
     -ms-transition: -ms-flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
@@ -97,9 +68,30 @@
     transition: flex 500ms cubic-bezier(0.17, 0.67, 0, 1.45);
     text-align: center;
     border-bottom: 1px solid #eee;
-
+    width: 100%;
     color: #000;
+
     a, a:hover {
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      -o-flex: 1;
+      flex: 1;
+      padding: 10px 20px;
+      @include flexbox();
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
       color: #000;
     }
 

@@ -37,12 +37,12 @@
   0% {
     opacity: 0;
   }
-  75% {
+  80% {
     opacity: 1;
-    @include transform(scale(1, 1));
+//    @include transform(scale(1, 1));
   }
   100% {
-    @include transform(scale(1, 1));
+//    @include transform(scale(1, 1));
     opacity: 0;
   }
 }
@@ -97,6 +97,6 @@
 
 .fade-in-out {
   opacity: 0;
-  @include transform(scale(0.25, 0.25));
+//  @include transform(scale(0.25, 0.25));
   @include animation('fade-in-out-animation 2s ' + $easeOutExpo + ' 0s 1 normal forwards');
 }
