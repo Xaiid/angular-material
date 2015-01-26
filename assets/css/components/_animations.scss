@@ -95,12 +95,7 @@ $start2: 3000ms;
 .slide-right {
   opacity: 0;
   @include transform(translateX(-100%));
-  @include animation('slide-center-animation 750ms ' + $easeOutExpo + ' 2000ms 1 normal forwards');
-}
-
-.show-delay {
-  opacity: 0;
-  @include animation('show-animation 0ms ' + $easeOutExpo + ' 2500ms 1 normal forwards');
+  @include animation('slide-center-animation 900ms ' + $easeOutExpo + ' 1800ms 1 normal forwards');
 }
 
 .slide-left {
@@ -109,14 +104,14 @@ $start2: 3000ms;
   .article-header {
     height: 100vh;
     @include transform(translateX(100%));
-    @include animation('slide-left-fill-animation 900ms ' + $easeOutExpo + ' 2400ms 1 normal forwards');
+    @include animation('slide-left-fill-animation 850ms ' + $easeOutExpo + ' 2400ms 1 normal forwards');
   }
 }
 
 .slide-up {
   opacity: 0;
   @include transform(translateY(100%));
-  @include animation('slide-center-animation 700ms ' + $easeOutExpo + ' 2700ms 1 normal forwards');
+  @include animation('slide-center-animation 800ms ' + $easeOutExpo + ' 2700ms 1 normal forwards');
 }
 
 .slide-down {

@@ -379,19 +379,11 @@
   -ms-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  -webkit-animation: slide-center-animation 750ms cubic-bezier(0.19, 1, 0.22, 1) 2000ms 1 normal forwards;
-  -moz-animation: slide-center-animation 750ms cubic-bezier(0.19, 1, 0.22, 1) 2000ms 1 normal forwards;
-  -ms-animation: slide-center-animation 750ms cubic-bezier(0.19, 1, 0.22, 1) 2000ms 1 normal forwards;
-  -o-animation: slide-center-animation 750ms cubic-bezier(0.19, 1, 0.22, 1) 2000ms 1 normal forwards;
-  animation: slide-center-animation 750ms cubic-bezier(0.19, 1, 0.22, 1) 2000ms 1 normal forwards; }
-
-.show-delay {
-  opacity: 0;
-  -webkit-animation: show-animation 0ms cubic-bezier(0.19, 1, 0.22, 1) 2500ms 1 normal forwards;
-  -moz-animation: show-animation 0ms cubic-bezier(0.19, 1, 0.22, 1) 2500ms 1 normal forwards;
-  -ms-animation: show-animation 0ms cubic-bezier(0.19, 1, 0.22, 1) 2500ms 1 normal forwards;
-  -o-animation: show-animation 0ms cubic-bezier(0.19, 1, 0.22, 1) 2500ms 1 normal forwards;
-  animation: show-animation 0ms cubic-bezier(0.19, 1, 0.22, 1) 2500ms 1 normal forwards; }
+  -webkit-animation: slide-center-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 1800ms 1 normal forwards;
+  -moz-animation: slide-center-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 1800ms 1 normal forwards;
+  -ms-animation: slide-center-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 1800ms 1 normal forwards;
+  -o-animation: slide-center-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 1800ms 1 normal forwards;
+  animation: slide-center-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 1800ms 1 normal forwards; }
 
 .slide-left {
   -webkit-animation: show-animation 0ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
@@ -406,11 +398,11 @@
     -ms-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-animation: slide-left-fill-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
-    -moz-animation: slide-left-fill-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
-    -ms-animation: slide-left-fill-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
-    -o-animation: slide-left-fill-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
-    animation: slide-left-fill-animation 900ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards; }
+    -webkit-animation: slide-left-fill-animation 850ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
+    -moz-animation: slide-left-fill-animation 850ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
+    -ms-animation: slide-left-fill-animation 850ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
+    -o-animation: slide-left-fill-animation 850ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
+    animation: slide-left-fill-animation 850ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards; }
 
 .slide-up {
   opacity: 0;
@@ -419,11 +411,11 @@
   -ms-transform: translateY(100%);
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
-  -webkit-animation: slide-center-animation 700ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards;
-  -moz-animation: slide-center-animation 700ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards;
-  -ms-animation: slide-center-animation 700ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards;
-  -o-animation: slide-center-animation 700ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards;
-  animation: slide-center-animation 700ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards; }
+  -webkit-animation: slide-center-animation 800ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards;
+  -moz-animation: slide-center-animation 800ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards;
+  -ms-animation: slide-center-animation 800ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards;
+  -o-animation: slide-center-animation 800ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards;
+  animation: slide-center-animation 800ms cubic-bezier(0.19, 1, 0.22, 1) 2700ms 1 normal forwards; }
 
 .slide-down {
   opacity: 0;
