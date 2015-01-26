@@ -3,3 +3,17 @@ $md: 992px;
 $sm: 768px;
 $xs: 600px;
 //$xs: 480px;
+
+
+// material animation should accelerate out and in fast
+// taken from here: http://codepen.io/stoikerty/pen/Glwxi
+// cubic-bezier(.55,0,.1,1)
+
+// exponential exit
+$easeInExpo    : cubic-bezier(0.950, 0.050, 0.795, 0.035);
+
+// exponential enter
+$easeOutExpo   : cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+// exponential exit + enter
+$easeInOutExpo : cubic-bezier(1.000, 0.000, 0.000, 1.000);

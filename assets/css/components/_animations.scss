@@ -1,18 +1,7 @@
 @import '../../../bower_components/compass-mixins/lib/compass';
 @import 'mixins';
+@import 'variables';
 
-// material animation should accelerate out and in fast
-// taken from here: http://codepen.io/stoikerty/pen/Glwxi
-// cubic-bezier(.55,0,.1,1)
-
-// exponential exit
-$easeInExpo    : cubic-bezier(0.950, 0.050, 0.795, 0.035);
-
-// exponential enter
-$easeOutExpo   : cubic-bezier(0.190, 1.000, 0.220, 1.000);
-
-// exponential exit + enter
-$easeInOutExpo : cubic-bezier(1.000, 0.000, 0.000, 1.000);
 
 @include keyframes(fade-out-animation) {
   0% {
@@ -32,6 +21,16 @@ $easeInOutExpo : cubic-bezier(1.000, 0.000, 0.000, 1.000);
      opacity: 1;
    }
  }
+
+@include keyframes(slide-center-animation) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    @include transform(translateX(0px));
+    opacity: 1;
+  }
+}
 
 @include keyframes(fade-in-out-animation) {
   0% {
@@ -73,7 +72,7 @@ $easeInOutExpo : cubic-bezier(1.000, 0.000, 0.000, 1.000);
 
 .fade-in {
   opacity: 0;
-//  @include animation('fade-in-animation 1s ' + $easeOutExpo + ' 2s 1 normal forwards');
+  @include animation('fade-in-animation 1s ' + $easeOutExpo + ' 2s 1 normal forwards');
 }
 
 .fade-in-out {

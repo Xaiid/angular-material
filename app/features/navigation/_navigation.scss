@@ -1,5 +1,5 @@
 @import '../../../assets/css/components/mixins';
-@import '../../../bower_components/compass-mixins/lib/compass';
+@import '../../../assets/css/components/variables';
 
 .sidenav {
   display: -webkit-flex;
@@ -22,6 +22,14 @@
   -ms-flex: none;
   -o-flex: none;
   flex: none;
+}
+
+.slide-right {
+  opacity: 0;
+  @include transform(translateX(-250px));
+  @include animation('slide-center-animation 2s ' + $easeOutExpo + ' 2s 1 normal forwards');
+  //  @include transition(transform, 2s, $easeOutExpo, 2s);
+//  @include transform(translateX(250px));
 }
 
 .sidenav {
