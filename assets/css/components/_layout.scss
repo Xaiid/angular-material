@@ -23,6 +23,13 @@
 //  margin: 0 10px;
 }
 
+#main {
+  main {
+    padding-top: 35px;
+    height: 100vh;
+  }
+}
+
 #main > section {
   display: -webkit-flex;
   display: -moz-flex;
