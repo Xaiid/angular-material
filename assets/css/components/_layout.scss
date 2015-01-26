@@ -1,6 +1,6 @@
 @import 'flexbox';
 @import 'color';
-
+@import 'mixins';
 
 #main {
   @include flexbox();
@@ -240,6 +240,12 @@ footer {
     -ms-flex: 1 0 auto;
     -o-flex: 1 0 auto;
     flex: 1 0 auto;
+  }
+}
+
+.container {
+  @include bp(md, false) {
+    width: 85%;
   }
 }
 

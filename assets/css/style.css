@@ -255,18 +255,10 @@ footer {
     -ms-flex: 1 0 auto;
     -o-flex: 1 0 auto;
     flex: 1 0 auto; } }
-/*
- * A partial implementation of the Ruby list functions from Compass:
- * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/lists.rb
- */
-/*
- * A partial implementation of the Ruby constants functions from Compass:
- * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/constants.rb
- */
-/*
- * A partial implementation of the Ruby display functions from Compass:
- * https://github.com/Compass/compass/blob/stable/core/lib/compass/core/sass_extensions/functions/display.rb
- */
+@media (min-width: 993px) {
+  .container {
+    width: 85%; } }
+
 @-webkit-keyframes fade-out-animation {
   0% {
     opacity: 1; }
@@ -324,54 +316,64 @@ footer {
     opacity: 1; } }
 @-webkit-keyframes slide-center-animation {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    visibility: visible; }
   100% {
-    -moz-transform: translateX(0px);
-    -o-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1; } }
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    visibility: visible; } }
 @-moz-keyframes slide-center-animation {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    visibility: visible; }
   100% {
-    -moz-transform: translateX(0px);
-    -o-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1; } }
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    visibility: visible; } }
 @keyframes slide-center-animation {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    visibility: visible; }
   100% {
-    -moz-transform: translateX(0px);
-    -o-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1; } }
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    visibility: visible; } }
 @-ms-keyframes slide-center-animation {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    visibility: visible; }
   100% {
-    -moz-transform: translateX(0px);
-    -o-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1; } }
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    visibility: visible; } }
 @-o-keyframes slide-center-animation {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    visibility: visible; }
   100% {
-    -moz-transform: translateX(0px);
-    -o-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1; } }
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    visibility: visible; } }
 @-webkit-keyframes fade-in-out-animation {
   0% {
     opacity: 0; }
@@ -578,6 +580,32 @@ footer {
   -ms-animation: fade-out-animation 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s 1 normal forwards;
   -o-animation: fade-out-animation 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s 1 normal forwards;
   animation: fade-out-animation 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s 1 normal forwards; }
+
+.slide-right {
+  opacity: 0;
+  -moz-transform: translateX(-250px);
+  -o-transform: translateX(-250px);
+  -ms-transform: translateX(-250px);
+  -webkit-transform: translateX(-250px);
+  transform: translateX(-250px);
+  -webkit-animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
+  -moz-animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
+  -ms-animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
+  -o-animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
+  animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards; }
+
+.slide-down {
+  opacity: 0;
+  -moz-transform: translateY(-250px);
+  -o-transform: translateY(-250px);
+  -ms-transform: translateY(-250px);
+  -webkit-transform: translateY(-250px);
+  transform: translateY(-250px);
+  -webkit-animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
+  -moz-animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
+  -ms-animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
+  -o-animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards;
+  animation: slide-center-animation 500ms cubic-bezier(0.19, 1, 0.22, 1) 2400ms 1 normal forwards; }
 
 .grow-100x {
   -webkit-animation: grow-100x-animation 300ms cubic-bezier(0.95, 0.05, 0.795, 0.035) 3s 1 normal forwards;
@@ -8289,19 +8317,6 @@ ul.side-nav.fixed {
   -o-flex: none;
   flex: none; }
 
-.slide-right {
-  opacity: 0;
-  -moz-transform: translateX(-250px);
-  -o-transform: translateX(-250px);
-  -ms-transform: translateX(-250px);
-  -webkit-transform: translateX(-250px);
-  transform: translateX(-250px);
-  -webkit-animation: slide-center-animation 2s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
-  -moz-animation: slide-center-animation 2s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
-  -ms-animation: slide-center-animation 2s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
-  -o-animation: slide-center-animation 2s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards;
-  animation: slide-center-animation 2s cubic-bezier(0.19, 1, 0.22, 1) 2s 1 normal forwards; }
-
 .sidenav {
   background-color: white;
   display: -webkit-box;
@@ -8474,6 +8489,7 @@ body {
   opacity: 0.8; }
 
 .hidden {
+  opacity: 0;
   visibility: hidden; }
 
 .hide-scrollbars {

@@ -1,5 +1,5 @@
 $lg: 1200px;
-$md: 992px;
+$md: 993px;
 $sm: 768px;
 $xs: 600px;
 //$xs: 480px;
@@ -17,3 +17,6 @@ $easeOutExpo   : cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 // exponential exit + enter
 $easeInOutExpo : cubic-bezier(1.000, 0.000, 0.000, 1.000);
+
+// function used for material interaction enter events
+$easeOutMaterial : cubic-bezier(0.4,0,0.2,1);

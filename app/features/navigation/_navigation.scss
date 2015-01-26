@@ -24,14 +24,6 @@
   flex: none;
 }
 
-.slide-right {
-  opacity: 0;
-  @include transform(translateX(-250px));
-  @include animation('slide-center-animation 2s ' + $easeOutExpo + ' 2s 1 normal forwards');
-  //  @include transition(transform, 2s, $easeOutExpo, 2s);
-//  @include transform(translateX(250px));
-}
-
 .sidenav {
   background-color: white;
   @include flexbox();

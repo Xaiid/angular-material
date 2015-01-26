@@ -1,26 +1,66 @@
 @import 'variables';
 
-@mixin bp($point) {
+@mixin bp($point, $isMaxWidth: true) {
   @if $point == lg {
-    @media (max-width: $lg) {
-      @content;
+
+    @if $isMaxWidth == true {
+      @media (max-width: $lg) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $lg) {
+        @content;
+      }
     }
+
   } @else if $point == md {
-    @media (max-width: $md) {
-      @content;
+
+    @if $isMaxWidth == true {
+      @media (max-width: $md) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $md) {
+        @content;
+      }
     }
+
   } @else if $point == sm {
-    @media (max-width: $sm) {
-      @content;
+
+    @if $isMaxWidth == true {
+      @media (max-width: $sm) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $sm) {
+        @content;
+      }
     }
+
   } @else if $point == xs {
-    @media (max-width: $xs) {
-      @content;
+
+    @if $isMaxWidth == true {
+      @media (max-width: $xs) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $xs) {
+        @content;
+      }
     }
+
   } @else {
-    @media (max-width: $point) {
-      @content
+
+    @if $isMaxWidth == true {
+      @media (max-width: $point) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $point) {
+        @content;
+      }
     }
+
   }
 }
 
